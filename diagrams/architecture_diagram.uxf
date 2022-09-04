@@ -1,0 +1,45 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>12</zoom_level><help_text>/ConfigLoader/
+Loads config for bot.</help_text><element><id>UMLClass</id><coordinates><x>36</x><y>276</y><w>252</w><h>48</h></coordinates><panel_attributes>/DataDownloader/
+Implemented by specific markets
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>48</x><y>396</y><w>204</w><h>48</h></coordinates><panel_attributes>/DataLoader/
+Loads specific data types
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>0</x><y>240</y><w>504</w><h>228</h></coordinates><panel_attributes>Data
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>84</x><y>312</y><w>72</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>20;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>696</x><y>300</y><w>168</w><h>48</h></coordinates><panel_attributes>/ConfigLoader/
+Loads config for bot
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>768</y><w>168</w><h>48</h></coordinates><panel_attributes>Database
+Postgres or Mongo
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>132</x><y>432</y><w>312</w><h>384</h></coordinates><panel_attributes>lt=&lt;&lt;-
+reads/writes</panel_attributes><additional_attributes>240;300;10;280;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>168</x><y>576</y><w>336</w><h>132</h></coordinates><panel_attributes>Strategy
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>624</y><w>252</w><h>48</h></coordinates><panel_attributes>/IStrategy/
+Processes data and adds signals.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>372</y><w>168</w><h>60</h></coordinates><panel_attributes>_/Config/_
+--
+Bot configuration.
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>336</y><w>132</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+loads</panel_attributes><additional_attributes>90;30;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>660</x><y>252</y><w>444</w><h>204</h></coordinates><panel_attributes>Config
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>336</y><w>564</w><h>480</h></coordinates><panel_attributes>lt=&lt;&lt;-
+reads/writes</panel_attributes><additional_attributes>10;380;370;350;410;160;170;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>828</x><y>552</y><w>168</w><h>36</h></coordinates><panel_attributes>/Trader/
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>396</y><w>168</w><h>48</h></coordinates><panel_attributes>DataProcessor
+Postgres or Mongo
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>396</y><w>108</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;20;70;20</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>432</y><w>84</w><h>216</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;160;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>708</y><w>168</w><h>48</h></coordinates><panel_attributes>/Action/
+Trade on markets
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>732</x><y>576</y><w>204</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;110;150;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>612</x><y>552</y><w>168</w><h>36</h></coordinates><panel_attributes>/TradeLoader/
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>576</y><w>144</w><h>216</h></coordinates><panel_attributes>lt=&lt;&lt;-
+reads/writes</panel_attributes><additional_attributes>10;160;20;70;100;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>588</x><y>504</y><w>444</w><h>108</h></coordinates><panel_attributes>Trade
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>384</x><y>108</y><w>168</w><h>48</h></coordinates><panel_attributes>BotManager
+Manages one strategy
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>384</x><y>36</y><w>168</w><h>48</h></coordinates><panel_attributes>GroupManager
+Manages one group
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>72</y><w>60</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>144</y><w>156</w><h>456</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>110;360;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>144</y><w>216</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>160;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>144</y><w>240</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;110;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>144</y><w>84</w><h>276</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;210;40;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>300</x><y>0</y><w>444</w><h>204</h></coordinates><panel_attributes>Bot
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>552</y><w>84</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>144</y><w>396</w><h>432</h></coordinates><panel_attributes>lt=&lt;&lt;-
+uses</panel_attributes><additional_attributes>310;340;120;270;10;10</additional_attributes></element></diagram>
