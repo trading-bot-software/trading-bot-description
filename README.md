@@ -14,9 +14,6 @@ Development:
 
 ## 1. User Interface
 
-
-- Login
-![login](ui/login.png)
 - Add Users
 ![add-users](ui/add-users.png)
 - Add Bots
